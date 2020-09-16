@@ -2,21 +2,158 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>LightHouse's Portfolio</title>
-    <meta name="description" content="Portfolio for world-renowned software-engineer LightHouse">
-    <meta name="author" content="LightHouse">
+    <meta name="description" content="Portfolio for world-renowned software-engineer LightHouse" />
+    <meta name="author" content="LightHouse" />
     <script src="https://kit.fontawesome.com/d86f66e211.js" crossorigin="anonymous"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
-    <link rel="icon" type="image/png" href="img/lighthouse.png">
-    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet" />
+    <link rel="icon" type="image/png" href="img/lighthouse.png" />
+    <link rel="stylesheet" href="style.css" />
     <script src="main.js" defer></script>
-
 </head>
 
 <body>
+    <!-- navbar -->
+    <div id="navbar">
+        <div class="navbar__logo">
+            <i class="far fa-lightbulb"></i>
+            <a href="#">LightHouse</a>
+        </div>
+        <ul class="navbar__menu">
+            <li>Home</li>
+            <li>About</li>
+            <li>Skills</li>
+            <li>My work</li>
+            <li>Testimonial</li>
+            <li>Contact</li>
+        </ul>
+    </div>
+    <!-- Home -->
+    <section id="home">
+        <img src="img/me.jpg" alt="My avartar" class="home__avatar" />
+        <h1>Hello, </br>I'm Dream Coder</h1>
+        <h2>A Software Engineer I'm going to be a capable developer.</h2>
+        <button class="home__button">contact me</button>
+    </section>
 
+    <!-- about -->
+    <section id="about">
+        <h1>About me</h1>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat alias, consectetur enim eos, veritatis
+            ullam quidem velit repellat nemo architecto porro modi, voluptatibus esse ipsa id cupiditate doloribus qui?
+            Dignissimos.</p>
+        <div class="about__major">
+            <div class="major">
+                <div class="major__icon">
+                    <i class="fab fa-html5"></i>
+                </div>
+                <div class="major__title">Front-end</div>
+                <div class="major__description">HTML, CSS, JavaScript, TypeScript, React, Vue, Web APIs</div>
+            </div>
+            <div class="major">
+                <div class="major__icon">
+                    <i class="fas fa-mobile"></i>
+                </div>
+                <div class="major__title">Mobile</div>
+                <div class="major__description">Android, IOS, React Native, Flutter, Java, Swift, Kotlin</div>
+            </div>
+            <div class="major">
+                <div class="major__icon">
+                    <i class="fas fa-landmark"></i>
+                </div>
+                <div class="major__title">Back-end</div>
+                <div class="major__description">Java, JavaScript, Go, NodojS, Rest APIs, GraphGL</div>
+            </div>
+         
+        </div>
+        <div class="about__career">
+            <div class="career">
+                <i class="fab fa-google"></i>
+                <p class="career__name">
+                Currently working at Google as Software Engineer
+                </p>
+                <p class="career__period">4years</p>
+            </div>
+            <div class="career">
+                <i class="fab fa-google"></i>
+                <p class="career__name">
+                    Currently working at Google as Software Engineer
+                </p>
+                <p class="career__period">4years</p>
+            </div>
+         
+    </section>
+
+    <!-- skills -->
+    <section id="skill">
+        <h1>Skills</h1>
+        <h2>Skills & Attributes</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed in eos quo voluptatum. Voluptatum soluta maxime,
+            dolorem perferendis eaque harum earum laudantium quibusdam quas error saepe, eius ab numquam rem?</p>
+        <div class="skill__box">
+            <div class="skill__box__skills">
+                <h3>Skills</h3>
+                <ul>
+                    <li>
+                        <div class="skill__box__skills__text">
+                            <span>HTML</span>
+                            <span>99%</span>
+                            <div class="skill__box__skills__range">
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="skill__box__skills__text">
+                            <span>HTML</span>
+                            <span>99%</span>
+                            <div class="skill__box__skills__range">
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="skill__box__skills__text">
+                            <span>HTML</span>
+                            <span>99%</span>
+                            <div class="skill__box__skills__range">
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="skill__box__skills__text">
+                            <span>HTML</span>
+                            <span>99%</span>
+                            <div class="skill__box__skills__range">
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="skill__box__skills__text">
+                            <span>HTML</span>
+                            <span>99%</span>
+                            <div class="skill__box__skills__range">
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="skill__box__tools">
+                <span>Tools</span>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.?</p>
+            </div>
+            <div class="skill__box__etc">
+                <span>Etc</span>
+                <span>Git</span>
+            </div>
+        </div>
+    </section>
+    <!-- work -->
+    <section id="work"></section>
+    <!-- testimonials -->
+    <section id="testimonials"></section>
+    <!-- contact -->
+    <section id="contact"></section>
 </body>
 
 </html>
