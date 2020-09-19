@@ -131,6 +131,15 @@ button {
   border-radius: var(--border-size);
 }
 
+.navbar__toggle-btn {
+  font-size: 24px;
+  position: absolute;
+  top: 24px;
+  right: 20px;
+  color: var(--color-white);
+  display: none;
+}
+
 #home {
   background: url('img/background/background.png') center/cover no-repeat;
   text-align: center;
@@ -496,4 +505,55 @@ button {
   font-size: var(--font-micro);
   color: var(--color-light-white);
   margin-bottom: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .navbar__toggle-btn {
+    display: block;
+  }
+
+  .navbar__toggle-btn:hover {
+    color: var(--color-dark-pink);
+  }
+  #navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .navbar__menu {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    display: none;
+  }
+  .navbar__menu li {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .navbar__logo {
+    margin: 10px 0px 16px 0;
+  }
+
+  .about__major {
+    flex-direction: column;
+  }
+  .major {
+    margin: 20px 0px;
+  }
+
+  .skillset {
+    flex-direction: column;
+    margin: 20px 0;
+  }
+
+  .project__img {
+    flex-grow: 1;
+  }
+
+  .testimonial__avatar {
+    width: 80px;
+    height: 80px;
+  }
 }
