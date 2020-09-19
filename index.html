@@ -16,13 +16,13 @@
 
 <body>
     <!-- navbar -->
-    <div id="navbar">
+    <div id="navbar"  class="section">
         <div class="navbar__logo">
             <i class="far fa-lightbulb"></i>
             <a href="#">LightHouse</a>
         </div>
         <ul class="navbar__menu">
-            <li>Home</li>
+            <li class="home">Home</li>
             <li>About</li>
             <li>Skills</li>
             <li>My work</li>
@@ -31,7 +31,7 @@
         </ul>
     </div>
     <!-- Home -->
-    <section id="home">
+    <section id="home" class="section">
         <img src="img/me.jpg" alt="My avartar" class="home__avatar" />
         <h1>Hello, </br>I'm Dream Coder</h1>
         <h2>A Software Engineer I'm going to be a capable developer.</h2>
@@ -39,7 +39,7 @@
     </section>
 
     <!-- about -->
-    <section id="about">
+    <section id="about" class="section section__container">
         <h1>About me</h1>
         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat alias, consectetur enim eos, veritatis
             ullam quidem velit repellat nemo architecto porro modi, voluptatibus esse ipsa id cupiditate doloribus qui?
@@ -49,21 +49,21 @@
                 <div class="major__icon">
                     <i class="fab fa-html5"></i>
                 </div>
-                <div class="major__title">Front-end</div>
+                <h2 class="major__title">Front-end</h2>
                 <div class="major__description">HTML, CSS, JavaScript, TypeScript, React, Vue, Web APIs</div>
             </div>
             <div class="major">
                 <div class="major__icon">
                     <i class="fas fa-mobile"></i>
                 </div>
-                <div class="major__title">Mobile</div>
+                <h2 class="major__title">Mobile</h2>
                 <div class="major__description">Android, IOS, React Native, Flutter, Java, Swift, Kotlin</div>
             </div>
             <div class="major">
                 <div class="major__icon">
                     <i class="fas fa-landmark"></i>
                 </div>
-                <div class="major__title">Back-end</div>
+                <h2 class="major__title">Back-end</h2>
                 <div class="major__description">Java, JavaScript, Go, NodojS, Rest APIs, GraphGL</div>
             </div>
 
@@ -71,23 +71,29 @@
         <div class="about__career">
             <div class="career">
                 <i class="fab fa-google"></i>
-                <p class="career__name">
-                    Currently working at Google as Software Engineer
-                </p>
-                <p class="career__period">4years</p>
+                <div class="career__letter">
+                    <p class="career__name">
+                        Currently working at Google as Software Engineer
+                    </p>
+                    <p class="career__period">4years</p>
+                </div>
+               
             </div>
             <div class="career">
                 <i class="fab fa-google"></i>
-                <p class="career__name">
-                    Currently working at Google as Software Engineer
-                </p>
-                <p class="career__period">4years</p>
+                <div class="career__letter">
+                    <p class="career__name">
+                        Currently working at Google as Software Engineer
+                    </p>
+                    <p class="career__period">4years</p>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- skills -->
-    <section id="skill">
+    <section id="skill" class="section">
+        <div class="section__container">
         <h1>Skills</h1>
         <h2>Skills & Attributes</h2>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed in eos quo voluptatum. Voluptatum soluta maxime,
@@ -101,7 +107,7 @@
                         <span>50%</span>
                     </div>
                     <div class="skill__bar">
-                        <div class="skill__value"></div>
+                        <div class="skill__value" style="width: 50%;"></div>
                     </div>
                 </div>
 
@@ -111,7 +117,7 @@
                         <span>30%</span>
                     </div>
                     <div class="skill__bar">
-                        <div class="skill__value"></div>
+                        <div class="skill__value" style="width: 30%;"></div>
                     </div>
                 </div>
 
@@ -121,7 +127,8 @@
                         <span>20%</span>
                     </div>
                     <div class="skill__bar">
-                        <div class="skill__value"></div>
+                        <div class="skill__value"
+                        style="width: 20%;"></div>
                     </div>
                 </div>
 
@@ -131,7 +138,8 @@
                         <span>0%</span>
                     </div>
                     <div class="skill__bar">
-                        <div class="skill__value"></div>
+                        <div class="skill__value"
+                        style="width: 0%;"></div>
                     </div>
                 </div>
 
@@ -141,17 +149,19 @@
                         <span>0%</span>
                     </div>
                     <div class="skill__bar">
-                        <div class="skill__value"></div>
+                        <div class="skill__value"
+                        style="width: 0%;"></div>
                     </div>
                 </div>
 
                 <div class="skill">
                     <div class="skill__description">
-                        <span>html</span>
-                        <span>99%</span>
+                        <span>JAVA</span>
+                        <span>3%</span>
                     </div>
                     <div class="skill__bar">
-                        <div class="skill__value"></div>
+                        <div class="skill__value"
+                        style="width: 3%;"></div>
                     </div>
                 </div>
 
@@ -160,7 +170,7 @@
             </div>
             <div class="skillset__right">
                 <div class="tools">
-                    <div class="skillset__title">Tools</div>
+                    <div class="skillset__title ">Tools</div>
                     <ul class="tools__list">
                         <li><span>Visual Studio Code</span></li>
                         <li><span>Atom</span></li>
@@ -181,13 +191,14 @@
 
             </div>
         </div>
+        </div>
     </section>
     <!-- work -->
-    <section id="work">
+    <section id="work" class="section section__container">
         <h1>My work</h1>
         <h3>Projects</h3>
         <div class="work__menu">
-            <button class="menu__btn"> All <span class="menu__count">8</span>
+            <button class="menu__btn active"> All <span class="menu__count">8</span>
 
             </button>
             <button class="menu__btn"> Front-end <span class="menu__count">3</span>
@@ -273,27 +284,29 @@
 
     </section>
     <!-- testimonials -->
-    <section id="testimonials">
+    <section id="testimonials" class="section">
+        <div class="section__container">
         <h1>Testimonials</h1>
         <h3>See what they say about me</h3>
         <div class="testumonial">
             <img src="img/man.jpg" alt="people" class="testimonial__avatar man1">
             <div class="testimonial__speech-bubble">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet similique blanditiis est ipsum eligendi veniam ea ipsam enim odio ab. Aliquid vitae molestias dolores labore aperiam minus aut saepe unde.</p>
-                <p class="name"><a href="#">LightHouse / KaKao</a></p>
+                <p class="speech">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet similique blanditiis est ipsum eligendi veniam ea ipsam enim odio ab. Aliquid vitae molestias dolores labore aperiam minus aut saepe unde.</p>
+                <p class="name"><a href="#">LightHouse </a> / KaKao</p>
             </div>
         </div>
-        <div class="testumonial">
+        <div class="testumonial second">
             <img src="img/man.jpg" alt="people" class="testimonial__avatar man2">
             <div class="testimonial__speech-bubble">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet similique blanditiis est ipsum eligendi veniam ea ipsam enim odio ab. Aliquid vitae molestias dolores labore aperiam minus aut saepe unde.</p>
-                <p class="name"><a href="#">LightHouse / KaKao</a></p>
+                <p class="speech">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet similique blanditiis est ipsum eligendi veniam ea ipsam enim odio ab. Aliquid vitae molestias dolores labore aperiam minus aut saepe unde.</p>
+                <p class="name"><a href="#">LightHouse </a>/ KaKao</p>
             </div>
         </div>
+    </div>
     </section>
 
     <!-- contact -->
-    <section id="contact">
+    <section id="contact" class="section">
         <h1 class="contact__title">Let's talk</h1>
         <h3 class="contact__email">0deungdae0@gmail.com</h3>
         <div class="contact__links">
