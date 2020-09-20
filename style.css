@@ -150,6 +150,30 @@ button {
   display: none;
 }
 
+.navbar__arrow-btn {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  width: 50px;
+  height: 50px;
+  font-size: var(--font-medium);
+  background: var(--color-pink);
+  border-radius: 50%;
+  color: var(--color-white);
+  opacity: 0;
+  pointer-events: none;
+}
+
+.arrow-visible {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.navbar__arrow-btn:hover {
+  transition: all var(--animation-duration) ease-in;
+  transform: scale(1.2);
+}
+
 #home {
   background: url('img/background/background.png') center/cover no-repeat;
   text-align: center;
