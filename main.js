@@ -25,8 +25,20 @@ menu.addEventListener('click', (e) => {
   }
 
   console.log(link);
-  const scrollTo = document.querySelector(link);
-  scrollTo.scrollIntoView({
-    behavior: 'smooth',
-  });
+  scrollIntoView(link);
 });
+
+//ScrollTo Contact me
+
+const contact = document.querySelector('.home__button');
+
+contact.addEventListener('click', () => {
+  scrollIntoView('#contact');
+});
+// 반복되는 부분을 함수로 만들어서 호출
+// selector라는 인자값을 이용.. 천잰가?
+function scrollIntoView(selector) {
+  const scrollTo = document.querySelector(selector);
+
+  scrollTo.scrollIntoView({ behavior: 'smooth' });
+}
