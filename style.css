@@ -127,6 +127,7 @@ button {
 .navbar__menu li {
   padding: 4px 12px;
   color: var(--color-white);
+  border: 1px solid transparent;
 }
 
 .navbar__menu li:hover {
@@ -134,6 +135,7 @@ button {
   cursor: pointer;
   transition: ease-in 300ms;
   border-radius: var(--border-size);
+  border: 1px solid var(--color-white);
 }
 
 .navbar__menu .home {
@@ -405,6 +407,11 @@ button {
   flex-wrap: wrap;
   margin: 16px 0;
   justify-content: center;
+  transition: all var(--animation-duration) ease-out;
+}
+.work__projects.anim-out {
+  opacity: 0;
+  transform: scale(0.96) translateY(40px);
 }
 .project__img {
   position: relative;
@@ -427,6 +434,11 @@ button {
   max-height: 100%;
 }
 
+/* invisible */
+.invisible {
+  display: none;
+}
+
 .project__description {
   display: flex;
   flex-flow: column;
@@ -443,17 +455,17 @@ button {
 }
 
 .project__description h3 {
-  color: var(--color-white);
+  color: var(--color-orange);
 }
 
 .project__description h3::after {
   content: '';
   display: block;
   position: relative;
-  width: 25px;
+  width: 50px;
   height: 2px;
   left: 50%;
-  margin-left: -12px;
+  transform: translateX(-50%);
   margin-top: 8px;
   background-color: var(--color-white);
 }
@@ -562,6 +574,13 @@ button {
     text-align: center;
     width: 100%;
     display: none;
+  }
+  .click__toggle {
+    display: block;
+  }
+
+  .toggle__img {
+    margin-top: 220px;
   }
   .navbar__menu li {
     display: flex;

@@ -24,8 +24,9 @@ menu.addEventListener('click', (e) => {
     return;
   }
 
-  console.log(link);
   scrollIntoView(link);
+  menu.classList.remove('toggle__img');
+  menu.classList.remove('click__toggle');
 });
 
 //ScrollTo Contact me
@@ -70,4 +71,43 @@ document.addEventListener('scroll', () => {
 
 arrowBtn.addEventListener('click', () => {
   scrollIntoView('#home');
+});
+
+// My work
+const workContainer = document.querySelector('.work__menu');
+const projectContainer = document.querySelector('.work__projects');
+const projects = document.querySelectorAll('.project__img');
+
+workContainer.addEventListener('click', (e) => {
+  const filter = e.target.dataset.work || e.target.parentNode.dataset.work;
+  console.log(filter);
+  if (filter == null) {
+    return;
+  }
+  projectContainer.classList.add('anim-out');
+
+  setTimeout(() => {
+    projects.forEach((project) => {
+      if (project.dataset.type === filter || filter === '*') {
+        project.classList.remove('invisible');
+      } else {
+        project.classList.add('invisible');
+      }
+    });
+    projectContainer.classList.remove('anim-out');
+  }, 300);
+  // my__work button
+  const active = document.querySelector('.menu__btn.active');
+  active.classList.remove('active');
+  const target = e.target.nodeName === 'BUTTON' ? e.target : e.target.parentNode;
+  target.classList.add('active');
+});
+
+// toggle btn
+
+const toggleBtn = document.querySelector('.navbar__toggle-btn');
+const homeAvatar = document.querySelector('.home__avatar');
+toggleBtn.addEventListener('click', () => {
+  menu.classList.toggle('click__toggle');
+  homeAvatar.classList.toggle('toggle__img');
 });

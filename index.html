@@ -24,17 +24,19 @@
         
 
         <ul class="navbar__menu">
-            <li data-link ="#home">Home</li>
+            <li class = "selected"data-link ="#home">Home</li>
             <li data-link ="#about">About</li>
             <li data-link ="#skill">Skills</li>
             <li data-link ="#work">My work</li>
             <li data-link ="#testimonials">Testimonial</li>
             <li data-link="#contact">Contact</li>
         </ul>
+        <!-- toogle btn -->
         <button class="navbar__toggle-btn">
             <i class="fas fa-bars"></i>
 
         </button>
+        <!-- arrow btn -->
         <button class="navbar__arrow-btn">
             <i class="fas fa-arrow-up"></i>
         </button>
@@ -209,55 +211,62 @@
     <section id="work" class="section section__container">
         <h1>My work</h1>
         <h3>Projects</h3>
-        <div class="work__menu">
-            <button class="menu__btn active"> All <span class="menu__count">8</span>
+        <div class="work__menu" >
+            <button class="menu__btn active"
+            data-work="*"> All <span class="menu__count">8</span>
 
             </button>
-            <button class="menu__btn"> Front-end <span class="menu__count">3</span>
+            <button class="menu__btn "
+            data-work="front"> Front-end <span class="menu__count">3</span>
 
             </button>
-            <button class="menu__btn"> Back-end <span class="menu__count">3</span>
+            <button class="menu__btn "
+            data-work="back"> Back-end <span class="menu__count">3</span>
 
             </button>
-            <button class="menu__btn"> Mobile <span class="menu__count">2</span>
+            <button class="menu__btn"
+            data-work="mobile"> Mobile <span class="menu__count">2</span>
 
             </button>
         </div>
 
         <div class="work__projects">
-            <a href="#" class="project__img" target="blank">
+            <a href="#" class="project__img" target="blank"
+            data-type="front">
                 <img src="img/projects/web1.jpg" alt="">
-                <div class="project__description">
+                <div class="project__description" >
                     <h3>Youtube Site</h3>
                     <span>Clone coding with HTML and CSS </span>
                 </div>
             </a>
 
-            <a href="#" class="project__img" target="blank">
+            <a href="#" class="project__img" target="blank"
+            data-type="front">
                 <img src="img/projects/web2.jpg" alt="">
-                <div class="project__description">
+                <div class="project__description" >
                     <h3>Youtube Site</h3>
                     <span>Clone coding with HTML and CSS </span>
                 </div>
             </a>
 
-            <a href="#" class="project__img" target="blank">
+            <a href="#" class="project__img" target="blank" data-type="front">
                 <img src="img/projects/web3.jpg" alt="">
-                <div class="project__description">
+                <div class="project__description"
+                >
                     <h3>Youtube Site</h3>
                     <span>Clone coding with HTML and CSS </span>
                 </div>
             </a>
 
-            <a href="#" class="project__img" target="blank">
+            <a href="#" class="project__img" target="blank" data-type="back">
                 <img src="img/projects/web4.jpg" alt="">
-                <div class="project__description">
+                <div class="project__description" >
                     <h3>Youtube Site</h3>
                     <span>Clone coding with HTML and CSS </span>
                 </div>
             </a>
 
-            <a href="#" class="project__img" target="blank">
+            <a href="#" class="project__img" target="blank" data-type="back">
                 <img src="img/projects/web5.jpg" alt="">
                 <div class="project__description">
                     <h3>Youtube Site</h3>
@@ -265,7 +274,7 @@
                 </div>
             </a>
 
-            <a href="#" class="project__img" target="blank">
+            <a href="#" class="project__img" target="blank" data-type="mobile">
                 <img src="img/projects/web6.jpg" alt="">
                 <div class="project__description">
                     <h3>Youtube Site</h3>
@@ -273,7 +282,7 @@
                 </div>
             </a>
 
-            <a href="#" class="project__img" target="blank">
+            <a href="#" class="project__img" target="blank" data-type="back">
                 <img src="img/projects/web7.jpg" alt="">
                 <div class="project__description">
                     <h3>Youtube Site</h3>
@@ -281,7 +290,7 @@
                 </div>
             </a>
 
-            <a href="#" class="project__img" target="blank">
+            <a href="#" class="project__img" target="blank" data-type="mobile">
                 <img src="img/projects/web8.jpg" alt="">
                 <div class="project__description">
                     <h3>Youtube Site</h3>
